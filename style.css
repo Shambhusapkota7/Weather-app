@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Weather Input Section */
+  .weather-input {
+    text-align: center;
+    padding: 20px;
+    background: #4c91e6;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  .input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .input-group i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .weatherIcon {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .feelslike {
+    font-size: 18px;
+  }
+  
+  .description {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .date {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .city {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+
+  .weather-output {
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4c91e6;
+  }
+  
+  .highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .highlight {
+    flex: 1 1 calc(33% - 10px);
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .highlight i {
+    font-size: 24px;
+    color: #4c91e6;
+  }
+  
+  .highlight h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .highlight span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .highlight p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .highlights {
+      flex-direction: column;
+    }
+  
+    .highlight {
+      flex: 1 1 100%;
+    }
+  }
+  
